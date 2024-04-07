@@ -727,11 +727,11 @@ class _MenuPageState extends State<MenuPage> {
                 ],
               ),
               ExpansionTile(
-                title: Text(
+                title: const Text(
                   "Settings & privacy",
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
                 ),
-                leading:Icon(
+                leading:const Icon(
                   Icons.settings,
                   color: Color.fromRGBO(166, 192, 100, 266),
                 ),

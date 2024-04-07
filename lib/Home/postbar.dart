@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../profiles/userprofilePage.dart';
 import 'createPostPage.dart';
 
+// ignore: must_be_immutable
 class PostBar extends StatelessWidget {
 
   PostBar({super.key,});

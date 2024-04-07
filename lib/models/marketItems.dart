@@ -1,8 +1,3 @@
-
-
-import 'package:flutter/material.dart';
-
-import '../ecommerce/itemPage.dart';
 class MarketItemsModel {
   // final VoidCallback onPressedItem;
   final String itemImage;

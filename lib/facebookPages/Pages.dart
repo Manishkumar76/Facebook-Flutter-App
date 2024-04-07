@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class PagesScreen extends StatelessWidget {
@@ -7,29 +8,30 @@ class PagesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pages'),
+        title: const Text('Pages'),
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {
               // Add search functionality
             },
           ),
           IconButton(
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             onPressed: () {
               // Add more options
             },
           ),
         ],
       ),
-      body: PageList(),
+      body: const PageList(),
     );
   }
 }
 
 class PageList extends StatelessWidget {
-  var _image_no=0;
+
+  const PageList({super.key});
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -64,13 +66,15 @@ class FlatButton {
 }
 
 class PageDetailsScreen extends StatelessWidget {
+  const PageDetailsScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final int pageIndex = ModalRoute.of(context)?.settings.arguments as int;
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page Details'),
+        title: const Text('Page Details'),
       ),
       body: Center(
         child: Text('Details for Page $pageIndex'),
