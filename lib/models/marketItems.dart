@@ -1,3 +1,4 @@
+// ignore: file_names
 class MarketItemsModel {
   // final VoidCallback onPressedItem;
   final String itemImage;
@@ -5,6 +6,7 @@ class MarketItemsModel {
   final String itemPrice;
   final String itemDiscription;
   final String sellerName;
+  // ignore: non_constant_identifier_names
   final String SellerJoinedDate;
   final String sellerImage;
   final String sellerlocation;
@@ -16,6 +18,7 @@ class MarketItemsModel {
     required this.itemPrice,
     required this.itemDiscription,
     required this.sellerName,
+    // ignore: non_constant_identifier_names
     required this.SellerJoinedDate,
     required this.sellerImage,
     required this.sellerlocation,
